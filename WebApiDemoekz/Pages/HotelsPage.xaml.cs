@@ -26,5 +26,10 @@ namespace WebApiDemoekz.Pages
 
             dataHotel.ItemsSource = BaseClass.tBD.Hotel.ToList();
         }
+
+        private void Btn_back_menu(object sender, RoutedEventArgs e)
+        {
+            FrameClass.MainFrame.Navigate(new Pages.TourPage());
+        }
     }
 }
